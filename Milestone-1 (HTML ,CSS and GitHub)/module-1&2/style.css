@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    
+}
+.fotter{
+    background-image: url(./img/pexels-jasmine-carter-888899.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: green;
+}
+.fotter h4{
+    color: white;
+    background: blue;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+}

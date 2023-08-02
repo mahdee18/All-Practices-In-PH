@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommentBox</title>
+</head>
+<body>
+    <div class="text-container">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit magni animi fuga ex eum reprehenderit. Nihil dicta harum laboriosam iusto?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit magni animi fuga ex eum reprehenderit. Nihil dicta harum laboriosam iusto?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit magni animi fuga ex eum reprehenderit. Nihil dicta harum laboriosam iusto?</p>
+    </div>
+
+    <textarea name="" id="newComment" cols="30" rows="5"></textarea>
+    <br>
+    <button id="update-btn">Update</button>
+    <script>
+        // document.getElementById('update-btn').addEventListener('click',function(){
+        //     const CommentBox = document.getElementById('newComment');
+        //     const newComments = CommentBox.value
+        //     const textContainer = document.getElementById('text-container');
+        //     const p = document.getElementById('p')
+        //     p.innerText = newComments;
+        //     textContainer.appendChild(p)
+        //     CommentBox.value = ''
+        // })
+
+        document.getElementById("update-btn").addEventListener("click", function(){
+            const commentBox = document.getElementById("newComment")
+            const newComment = commentBox.value
+
+            const textContainer = document.getElementById("text-container")
+            const p = document.createElement("p")
+            p.innerText = newComment;
+            textContainer.appendChild(p);
+            commentBox.value = ""
+        })
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text-container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A quod odit explicabo, soluta error cupiditate hic velit. Consectetur, beatae ratione, pariatur voluptatum vel praesentium natus, cumque iste quos eaque ad provident id repellat! Quibusdam ad magnam assumenda veniam alias rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat laboriosam eius quaerat porro atque numquam, incidunt impedit, assumenda facilis reprehenderit tenetur unde sapiente nemo? Totam nihil, distinctio possimus inventore nulla nesciunt quia molestias neque voluptatibus eius corrupti, pariatur architecto praesentium?</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio ex, repudiandae et dolorem explicabo incidunt error distinctio enim nobis facere natus, cumque pariatur reprehenderit temporibus atque soluta deleniti vitae velit porro quibusdam animi inventore voluptatibus numquam minus. Dolore, dolores in?</p>
+    </div>
+    <textarea name="" id="comment" cols="40" rows="5"></textarea> <br>
+    <button id="btn-update">Update</button>
+
+    <script>
+        document.getElementById("btn-update").addEventListener("click", function(){
+            const commentBox = document.getElementById("comment")
+            const newComment = commentBox.value
+
+            const textContainer = document.getElementById("text-container")
+            const p = document.createElement("p")
+            p.innerText = newComment;
+            textContainer.appendChild(p);
+            commentBox.value = ""
+        })
+    </script>
+</body>
+</html>

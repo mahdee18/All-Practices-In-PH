@@ -1,0 +1,49 @@
+label{
+    display: block;
+    padding-bottom: 20px;
+}
+table{
+    border-collapse: collapse;
+    
+}
+table tr{
+    border: 1px solid rgb(12, 12, 12);
+}
+table td{
+    border: 1px solid rgb(12, 12, 12);
+    padding: 10px 15px;
+}
+table th{
+    border: 1px solid rgb(12, 12, 12);
+    padding: 10px 15px;
+}
+/* NavBar  */
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav a{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: serif;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+nav a:hover{
+    background: rgb(153, 141, 141);
+    color: rgb(248, 250, 252);
+}
+/* Dropdown */
+nav ul .dropdown{
+    display: none;
+}
+nav li:hover > .dropdown{
+    display: block;
+    padding-left: 0;
+    margin-top: 20px;
+    background: goldenrod;
+}

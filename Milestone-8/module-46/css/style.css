@@ -1,0 +1,15 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    text-align: center;
+}
+.country{
+    border: 2px solid gray;
+    padding: 20px;
+    background-color: #e9bfbf;
+    border-radius: 20px;
+}
+.country img{
+    width: 200px;
+}

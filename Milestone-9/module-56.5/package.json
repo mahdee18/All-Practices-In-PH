@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "daisyui": "^2.51.5",
+    "lottie-react": "^2.4.0"
+  }
+}

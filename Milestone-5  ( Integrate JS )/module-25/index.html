@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to my DOM</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus provident nobis culpa ea ipsum modi asperiores. Atque reprehenderit a obcaecati?</p>
+    <section>
+        <h1 id="heading-title">Places I like to visit!</h1>
+        <ul>
+            
+            <li class="important-places">Sondarban</li>
+            <li class="important-places">Bandarban</li>
+            <li class="important-places">Katabon</li>
+            <li>Shalbon</li>
+        </ul>
+    </section>
+    <section>
+        <h1>This is title</h1>
+        <ul class="fruit">
+            <li class="fruits">Banana</li>
+            <li class="fruits">Apple</li>
+            <li class="fruits">Mango</li>
+        </ul>
+    </section>
+    <script>
+        // Option -1
+        const fruits = document.getElementsByTagName('li')
+        // console.log(fruit)
+
+        // Option -2
+        const fruitId = document.getElementById('heading-title').style.color = 'blue'
+        console.log(fruitId)
+
+        // Option   -3
+        const importantPlaces = document.getElementsByClassName('important-places')
+        for(li of importantPlaces){
+            console.log(li.innerText)
+        }
+        // Option -4
+        const fruit = document.querySelector('.fruit')
+        for(li of fruit){
+            console.log(li.innerText)
+        }
+    </script>
+    <script src="./dom.js"></script>
+</body>
+</html>
